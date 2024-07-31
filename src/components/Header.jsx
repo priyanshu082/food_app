@@ -1,20 +1,125 @@
-import React from 'react';
+import React, { useState } from 'react';
+import logo from '../assets/logo.png'; // Corrected path
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { motion, AnimatePresence } from 'framer-motion';
+import Button from './Button';
 
-const Header = () => (
-  <header className="bg-white shadow">
-    <div className="container mx-auto p-4 flex justify-between items-center">
-      <div className="text-2xl font-bold">Restaurant</div>
-      <nav className="space-x-4">
-        <a href="#home" className="text-gray-700">Home</a>
-        <a href="#menu" className="text-gray-700">Menu</a>
-        <a href="#events" className="text-gray-700">Events</a>
-        <a href="#gallery" className="text-gray-700">Gallery</a>
-        <a href="#about" className="text-gray-700">About</a>
-        <a href="#contact" className="text-gray-700">Contact</a>
-        <button className="bg-red-500 text-white px-4 py-2 rounded">Book a Table</button>
-      </nav>
-    </div>
-  </header>
-);
+const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const menuVariants = {
+    closed: {
+      x: '100%',
+      transition: {
+        type: 'spring',
+        stiffness: 400,
+        damping: 40,
+      },
+    },
+    open: {
+      x: 0,
+      transition: {
+        type: 'spring',
+        stiffness: 400,
+        damping: 40,
+      },
+    },
+  };
+
+  return (
+    <header className="flex flex-row items-center justify-between p-4 bg-transparent mx-[7vw]">
+      {/* Logo */}
+      <img src={logo} className="h-14" alt="Logo" />
+
+      {/* Mobile Menu Button */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial="closed"
+            animate="open"
+            exit="closed"
+            variants={menuVariants}
+            className="fixed top-0 right-0 bottom-0 w-full sm:w-96 bg-[#E6E6FF] z-50 shadow-lg overflow-y-auto"
+          >
+            <div className="p-5 flex flex-col items-center mt-[5vw] h-full">
+              <button onClick={() => setIsMobileMenuOpen(false)} className="absolute top-6 right-6 text-xl md:text-3xl">
+                <AiOutlineClose />
+              </button>
+              <div className="space-y-5 px-4 sm:w-full">
+                <a
+                  href="/menu"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex border-b-[1px] border-black/40 pb-[0.8vw] text-lg font-semibold text-black/90 hover:text-orange-500 transition-colors duration-400"
+                >
+                  Menu
+                </a>
+                <a
+                  href="/events"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex border-b-[1px] border-black/40 pb-[0.8vw] text-lg font-semibold text-black/90 hover:text-orange-500 transition-colors duration-400"
+                >
+                  Events
+                </a>
+                <a
+                  href="/gallery"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex border-b-[1px] border-black/40 pb-[0.8vw] text-lg font-semibold text-black/90 hover:text-orange-500 transition-colors duration-400"
+                >
+                  Gallery
+                </a>
+                <a
+                  href="/about"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex border-b-[1px] border-black/40 pb-[0.8vw] text-lg font-semibold text-black/90 hover:text-orange-500 transition-colors duration-400"
+                >
+                  About
+                </a>
+                <a
+                  href="/contact"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex border-b-[1px] border-black/40 pb-[0.8vw] text-lg font-semibold text-black/90 hover:text-orange-500 transition-colors duration-400"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <div onClick={toggleMobileMenu} className="lg:hidden text-2xl">
+        <AiOutlineMenu />
+      </div>
+
+      {/* Navigation Links */}
+      <div className="hidden lg:flex lg:space-x-12">
+        <a href="/menu" className="text-[1.1vw] text-black hover:text-gray-400 transition duration-300">
+          Menu
+        </a>
+        <a href="/events" className="text-[1.1vw] text-black hover:text-gray-400 transition duration-300">
+          Events
+        </a>
+        <a href="/gallery" className="text-[1.1vw] text-black hover:text-gray-400 transition duration-300">
+          Gallery
+        </a>
+        <a href="/about" className="text-[1.1vw] text-black hover:text-gray-400 transition duration-300">
+          About
+        </a>
+        <a href="/contact" className="text-[1.1vw] text-black hover:text-gray-400 transition duration-300">
+          Contact
+        </a>
+      </div>
+
+      {/* Button for larger screens */}
+      
+        <Button className="hidden lg:flex" name="Book a table" />
+  
+    </header>
+  );
+};
 
 export default Header;
