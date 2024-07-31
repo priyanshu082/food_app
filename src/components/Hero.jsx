@@ -1,36 +1,48 @@
+import Button from "./Button";
+import mask from "../assets/maskGroup.png"
+import dish from "../assets/dish2.png"
+import grass from  "../assets/Group.png"
+import cabbage from "../assets/Group5.png"
+import grass2 from "../assets/Group.png"
 import React, { useState } from 'react';
 import logo from '../assets/logo.png'; // Corrected path
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { motion, AnimatePresence } from 'framer-motion';
-import Button from './Button';
+import { CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa6";
+import { TfiTwitter } from "react-icons/tfi";
 
-const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
 
-  const menuVariants = {
-    closed: {
-      x: '100%',
-      transition: {
-        type: 'spring',
-        stiffness: 400,
-        damping: 40,
+ 
+const Hero = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+      setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+  
+    const menuVariants = {
+      closed: {
+        x: '100%',
+        transition: {
+          type: 'spring',
+          stiffness: 400,
+          damping: 40,
+        },
       },
-    },
-    open: {
-      x: 0,
-      transition: {
-        type: 'spring',
-        stiffness: 400,
-        damping: 40,
+      open: {
+        x: 0,
+        transition: {
+          type: 'spring',
+          stiffness: 400,
+          damping: 40,
+        },
       },
-    },
-  };
-
+    };
+  
   return (
+    <div className="flex flex-col">
     <header className="flex flex-row items-center justify-between p-4 bg-transparent mx-[7vw]">
       {/* Logo */}
       <img src={logo} className="h-14" alt="Logo" />
@@ -119,7 +131,41 @@ const Header = () => {
         <Button className="hidden lg:flex bg-red-700" name="Book a table" />
   
     </header>
+
+
+
+
+<div className="flex flex-col md:flex-row mx-[7vw] my-[13vw]  justify-between relative">
+      <div className="w-[50%] flex flex-col gap-[3vw]  py-[7vw] px-[3vw]">
+        <div className="text-[4vw] leading-[4vw] font-semibold">We Provide the best food for you</div>
+        <div className="mt-[2vw] w-[75%]">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+          aliquid ex pariatur, veritatis doloremque repudiandae sed ipsa
+          molestias ea omnis magn
+        </div>
+        <div className="flex flex-row gap-[1vw]">
+          <Button className="bg-black " name="Menu" />
+          <Button className="bg-red-700 " name="Book a table" />
+        </div>
+
+        <div className="flex flex-row gap-[2vw] mt-[4vw]">
+        <CiFacebook className="text-[2.25vw]"/>
+        <FaInstagram className="text-[2.25vw]"/>
+        <TfiTwitter className="text-[2.25vw]"/>
+        </div>
+      </div>
+
+      <div className="w-[50%] flex justify-center relative">
+        <img src={dish} className="h-[25vw] absolute z-20 mr-[35vw] mt-[19vw]"/>
+        <img src={grass} className="h-[12vw] absolute mr-[30vw] mt-[-5vw]"/>
+        <img src={cabbage} className="h-[20vw] absolute mr-[-25vw] mt-[-8vw]"/>
+        <img src={grass2} className="h-[15vw] absolute mr-[-23vw] mt-[32vw] rotate-[150deg]"/>
+        <img src={mask} className="h-[45vw] z-10"/>
+      </div>
+    </div>
+    </div>
+    
   );
 };
 
-export default Header;
+export default Hero;

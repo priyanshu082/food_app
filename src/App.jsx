@@ -6,10 +6,12 @@ import Chef from './components/Chef';
 import Testimonials from './components/Testimonials';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
 
 const App = () => (
   <div>
-    <Header />
+    {/* <Header /> */}
+    <Hero/>
     <Categories />
     <SpecialDishes />
     <Chef />
