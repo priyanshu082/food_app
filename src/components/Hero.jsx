@@ -11,6 +11,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { TfiTwitter } from "react-icons/tfi";
+import curve from "../assets/ellipse.png"
+import curve1 from "../assets/Ellipse1.png"
+import curve2 from "../assets/Ellipse2.png"
 
 
 
@@ -132,7 +135,9 @@ const Hero = () => {
   
     </header>
 
-
+<img src={curve} className="h-[30vw] absolute"/>
+<img src={curve1} className="h-[25vw] absolute"/>
+<img src={curve2} className="h-[30vw] absolute"/>
 
 
 <div className="flex flex-col md:flex-row mx-[7vw] my-[13vw]  justify-between relative">
@@ -148,7 +153,7 @@ const Hero = () => {
           <Button className="bg-red-700 " name="Book a table" />
         </div>
 
-        <div className="flex flex-row gap-[2vw] mt-[4vw]">
+        <div className="flex flex-row gap-[2vw] mt-[2vw]">
         <CiFacebook className="text-[2.25vw]"/>
         <FaInstagram className="text-[2.25vw]"/>
         <TfiTwitter className="text-[2.25vw]"/>
