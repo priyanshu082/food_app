@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles.css */
+/* styles.css */
+/* styles.css */
+.gradient-yellow {
+    background: linear-gradient(to top, #fff9cc, transparent);
+  }
+  
+  .gradient-black {
+    background: linear-gradient(to top, #f2f2f2, transparent);
+  }
+  
+  .gradient-pink {
+    background: linear-gradient(to top, #ffe6f2, transparent);
+  }
+  
+  .gradient-red {
+    background: linear-gradient(to top, #ffebeb, transparent);
+  }
+  
+  .gradient-blue {
+    background: linear-gradient(to top, #e6f7ff, transparent);
+  }
+  
+  .gradient-green {
+    background: linear-gradient(to top, #e6ffe6, transparent);
+  }
+  
+  

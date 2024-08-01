@@ -1,28 +1,39 @@
-import React from 'react';
+import React from "react";
 
 const dishes = [
-  { name: 'Lampsh with rice', price: '$12', description: 'Lorem ipsum dolor sit amet.', image: '/path/to/image1.jpg' },
-  { name: 'Fish and Veggie', price: '$15', description: 'Lorem ipsum dolor sit amet.', image: '/path/to/image2.jpg' },
-  { name: 'Tofu Chili', price: '$10', description: 'Lorem ipsum dolor sit amet.', image: '/path/to/image3.jpg' },
-  { name: 'Egg and Cucumber', price: '$8', description: 'Lorem ipsum dolor sit amet.', image: '/path/to/image4.jpg' },
+  {
+    name: "Lampsh with rice",
+    price: "$12",
+    description: "Lorem ipsum dolor sit amet.",
+    image: "/path/to/image1.jpg",
+  },
+  {
+    name: "Fish and Veggie",
+    price: "$15",
+    description: "Lorem ipsum dolor sit amet.",
+    image: "/path/to/image2.jpg",
+  },
+  {
+    name: "Tofu Chili",
+    price: "$10",
+    description: "Lorem ipsum dolor sit amet.",
+    image: "/path/to/image3.jpg",
+  },
+  {
+    name: "Egg and Cucumber",
+    price: "$8",
+    description: "Lorem ipsum dolor sit amet.",
+    image: "/path/to/image4.jpg",
+  },
 ];
 
 const SpecialDishes = () => (
-  <section className="py-8">
-    <div className="container mx-auto text-center">
-      <h2 className="text-2xl font-bold mb-4">Our Special Dishes</h2>
-      <div className="flex flex-wrap justify-center">
-        {dishes.map(dish => (
-          <div key={dish.name} className="m-2 p-4 bg-white shadow rounded-lg w-60">
-            <img src={dish.image} alt={dish.name} className="w-full h-32 object-cover rounded" />
-            <div className="mt-4 text-xl font-bold">{dish.name}</div>
-            <div className="text-gray-500">{dish.price}</div>
-            <div className="mt-2 text-gray-700">{dish.description}</div>
-          </div>
-        ))}
-      </div>
+  <div className="flex flex-col justify-center items-center mt-[5vw] bg-gray-100">
+    <div className="flex flex-col justify-center items-center mx-[7vw]">
+      <div className="text-red-800 text-[5vw]">Our Special Dishes</div>
+      <div className="w-[35vw]">Lorem ipsum dolor, sit amet consectetNihil,  vitae fugit nobis voluptatum eaque eum facilis ipsa odio praesentium, velit consectetur..</div>
     </div>
-  </section>
+  </div>
 );
 
 export default SpecialDishes;

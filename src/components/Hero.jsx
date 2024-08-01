@@ -45,8 +45,8 @@ const Hero = () => {
     };
   
   return (
-    <div className="flex flex-col">
-    <header className="flex flex-row items-center justify-between p-4 bg-transparent mx-[7vw]">
+    <div className="flex flex-col mx-[7vw]">
+    <header className="flex flex-row items-center justify-between p-4 bg-transparent ">
       {/* Logo */}
       <img src={logo} className="h-14" alt="Logo" />
 
@@ -135,12 +135,12 @@ const Hero = () => {
   
     </header>
 
-<img src={curve} className="h-[30vw] absolute"/>
+{/* <img src={curve} className="h-[30vw] absolute"/>
 <img src={curve1} className="h-[25vw] absolute"/>
-<img src={curve2} className="h-[30vw] absolute"/>
+<img src={curve2} className="h-[30vw] absolute"/> */}
 
 
-<div className="flex flex-col md:flex-row mx-[7vw] my-[13vw]  justify-between relative">
+<div className="flex flex-col md:flex-row  my-[13vw]  justify-between relative">
       <div className="w-[50%] flex flex-col gap-[3vw]  py-[7vw] px-[3vw]">
         <div className="text-[4vw] leading-[4vw] font-semibold">We Provide the best food for you</div>
         <div className="mt-[2vw] w-[75%]">
