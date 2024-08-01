@@ -25,7 +25,8 @@ const App = () => (
       <Hero />
       <Categories />
       <SpecialDishes />
-      {/* <Chef />
+      <Chef />
+      {/* 
       <Testimonials />
       <Newsletter />
       <Footer /> */}

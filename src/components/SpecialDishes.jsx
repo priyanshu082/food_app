@@ -1,9 +1,19 @@
 import React from "react";
 import dish1 from "../assets/dish-1 1.png";
+import mask from "../assets/dish-2 2.png"
+import dish from "../assets/dish2.png"
+import grass from  "../assets/Group.png"
+import cabbage from "../assets/Group5.png"
+import grass2 from "../assets/Group.png"
 import dish2 from "../assets/dish-3 1.png";
 import dish3 from "../assets/dish-5.png";
 import dish4 from "../assets/dish-4.png";
 import { DiHackernews } from "react-icons/di";
+import { CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa6";
+import { TfiTwitter } from "react-icons/tfi";
+import Button from "./Button";
+
 
 const dishes = [
   {
@@ -33,12 +43,13 @@ const dishes = [
 ];
 
 const SpecialDishes = () => (
-  <div className="flex flex-col justify-center items-center mt-[5vw] bg-gray-100 h-[100vh]">
+  <div className="flex flex-col justify-center items-center mt-[5vw] bg-gray-100 py-[4vw]">
+
     <div className="flex flex-col justify-center items-center mx-[7vw] gap-[2vw]">
-      <div className="text-red-800 text-[5vw] font-semibold">
+      <div className="text-red-800 text-[4vw] font-semibold">
         Our Special Dishes
       </div>
-      <div className="w-[35vw]">
+      <div className="w-[35vw] text-center">
         Lorem ipsum dolor, sit amet consectetNihil, vitae fugit nobis voluptatum
         eaque eum facilis ipsa odio praesentium, velit consectetur..
       </div>
@@ -61,6 +72,26 @@ const SpecialDishes = () => (
         </div>
       ))}
     </div>
+
+    <div className="flex flex-col md:flex-row-reverse  my-[13vw] justify-between relative mx-[7vw]">
+      <div className="w-[40%] flex flex-col gap-[3vw]  py-[10vw] px-[3vw]">
+        <div className="text-[4vw] leading-[5vw] text-red-800 font-semibold w-[35vw]">Welcome to  best Restraunts</div>
+        <div className="mt-[1vw] w-[75%]">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+          aliquid ex pariatur, veritatis doloremque repudiandae sed ipsa
+          molestias ea omnis magn
+        </div>
+        <div className="flex flex-row gap-[1vw]">
+          <Button className="bg-black " name="Menu" />
+          <Button className="bg-red-700 " name="Book a table" />
+        </div>
+      </div>
+
+        <img src={mask} className="h-[45vw] w-[60%] z-10"/>
+   
+    </div>
+
+
   </div>
 );
 

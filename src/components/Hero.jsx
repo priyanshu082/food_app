@@ -168,6 +168,7 @@ const Hero = () => {
         <img src={mask} className="h-[45vw] z-10"/>
       </div>
     </div>
+    
     </div>
     
   );
