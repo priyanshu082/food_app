@@ -1,17 +1,9 @@
 import React from "react";
 import dish1 from "../assets/dish-1 1.png";
 import mask from "../assets/dish-2 2.png"
-import dish from "../assets/dish2.png"
-import grass from  "../assets/Group.png"
-import cabbage from "../assets/Group5.png"
-import grass2 from "../assets/Group.png"
 import dish2 from "../assets/dish-3 1.png";
 import dish3 from "../assets/dish-5.png";
 import dish4 from "../assets/dish-4.png";
-import { DiHackernews } from "react-icons/di";
-import { CiFacebook } from "react-icons/ci";
-import { FaInstagram } from "react-icons/fa6";
-import { TfiTwitter } from "react-icons/tfi";
 import Button from "./Button";
 
 

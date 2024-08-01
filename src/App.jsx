@@ -26,8 +26,8 @@ const App = () => (
       <Categories />
       <SpecialDishes />
       <Chef />
-      {/* 
       <Testimonials />
+      {/* 
       <Newsletter />
       <Footer /> */}
     </div>
