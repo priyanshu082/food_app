@@ -1,15 +1,31 @@
-import React from 'react';
+import React from "react";
+import bgImg from "../assets/bgImg.png";
+import Button from "./Button";
 
 const Newsletter = () => (
-  <section className="py-8 bg-gray-100">
-    <div className="container mx-auto text-center">
-      <h2 className="text-2xl font-bold mb-4">Get On Promo Code by Subscribing To our Newsletter</h2>
-      <form className="flex justify-center">
-        <input type="email" placeholder="Enter your email" className="p-2 border border-gray-300 rounded-l" />
-        <button type="submit" className="bg-red-500 text-white px-4 py-2 rounded-r">Subscribe</button>
-      </form>
+  <div className="h-[100vh] justify-center items-center flex">
+    <div
+      className="h-[30vw] w-[80vw] gap-[4vw] relative flex justify-center items-center rounded-[3vw] flex-col "
+      style={{
+        backgroundImage: `url(${bgImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="w-[40vw] text-white text-[2.5vw] text-center font-semibold">
+        Get or Promo Code by Subscribing to our Newsletter
+      </div>
+      <div>
+        <input
+          placeholder="Enter your mail"
+          className="w-[40vw] rounded-[1vw] py-[1.5vw] px-[1vw]"
+        />
+        <div className="absolute mt-[-4vw] ml-[31vw]">
+          <Button className="bg-red-800" name="Subscribe" />
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 );
 
 export default Newsletter;

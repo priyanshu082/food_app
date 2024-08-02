@@ -27,8 +27,8 @@ const App = () => (
       <SpecialDishes />
       <Chef />
       <Testimonials />
-      {/* 
       <Newsletter />
+      {/* 
       <Footer /> */}
     </div>
   </div>
