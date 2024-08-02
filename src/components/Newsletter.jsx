@@ -5,22 +5,22 @@ import Button from "./Button";
 const Newsletter = () => (
   <div className="my-[8vw] justify-center items-center flex">
     <div
-      className="h-[30vw] w-[80vw] gap-[4vw] relative flex justify-center items-center rounded-[3vw] flex-col "
+      className=" h-[40vw] md:h-[30vw] w-[90vw] md:w-[80vw] gap-[4vw]  flex justify-center items-center rounded-[3vw] flex-col "
       style={{
         backgroundImage: `url(${bgImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="w-[40vw] text-white text-[2.5vw] text-center font-semibold">
+      <div className="w-[70vw] md:w-[40vw] text-white text-[4vw] md:text-[2.5vw] text-center font-semibold">
         Get or Promo Code by Subscribing to our Newsletter
       </div>
-      <div>
+      <div className="relative">
         <input
           placeholder="Enter your mail"
-          className="w-[40vw] rounded-[1vw] py-[1.5vw] px-[1vw]"
+          className="w-[70vw] md:w-[40vw] rounded-[1vw] py-[1.5vw] px-[1vw]"
         />
-        <div className="absolute mt-[-4vw] ml-[31vw]">
+        <div className="absolute mt-[-8vw] ml-[47vw] md:mt-[-4.2vw] md:ml-[29.5vw]">
           <Button className="bg-red-800" name="Subscribe" />
         </div>
       </div>
