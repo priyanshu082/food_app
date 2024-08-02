@@ -9,8 +9,8 @@ const Footer = () => (
   <div className="flex flex-col gap-[2vw] mx-[10vw] text-gray-500 mb-[5vw] relative">
     <img src={img5} className="h-[40vw] mt-[-5vw] ml-[15vw] absolute " />
 
-    <div className="flex flex-col md:flex-row  gap-[8vw] ">
-      <div className="w-[30vw] flex flex-col gap-[2vw]  md:flex">
+    <div className="flex flex-col md:flex-row gap-[8vw] ">
+      <div className="w-[30vw] hidden flex-col gap-[2vw]  md:flex">
         <div className="flex flex-col gap-[1vw]">
           <img src={logo} className="w-[15vw]" />
           <div>

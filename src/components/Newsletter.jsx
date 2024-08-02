@@ -20,7 +20,7 @@ const Newsletter = () => (
           placeholder="Enter your mail"
           className="w-[70vw] md:w-[40vw] rounded-[1vw] py-[1.5vw] px-[1vw]"
         />
-        <div className="absolute mt-[-8vw] ml-[47vw] md:mt-[-4.2vw] md:ml-[29.5vw]">
+        <div className="absolute mt-[-8vw] ml-[47vw] md:mt-[-4vw] md:ml-[31vw]">
           <Button className="bg-red-800" name="Subscribe" />
         </div>
       </div>
