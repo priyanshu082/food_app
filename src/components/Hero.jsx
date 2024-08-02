@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { TfiTwitter } from "react-icons/tfi";
+import dish2 from "../assets/dish-2 2.png"
 import curve from "../assets/ellipse.png"
 import curve1 from "../assets/Ellipse1.png"
 import curve2 from "../assets/Ellipse2.png"
@@ -140,13 +141,15 @@ const Hero = () => {
 <img src={curve2} className="h-[30vw] absolute"/> */}
 
 
-<div className="flex flex-col md:flex-row  my-[13vw]  justify-between relative">
-      <div className="w-[50%] flex flex-col gap-[3vw]  py-[7vw] px-[3vw]">
-        <div className="text-[4vw] leading-[4vw] font-semibold">We Provide the best food for you</div>
-        <div className="mt-[2vw] w-[75%]">
+<div className="flex flex-row  my-[13vw] justify-between relative">
+
+      <div className="md:w-[50%] flex flex-col gap-[3vw] py-[7vw] md:px-[3vw]">
+        <div className=" md:text-[4vw] text-[8vw] leading-[10vw] md:leading-[4vw] font-semibold">We Provide the best food for you</div>
+        <div className="mt-[2vw] md:w-[75%] flex flex-row w-full">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
           aliquid ex pariatur, veritatis doloremque repudiandae sed ipsa
           molestias ea omnis magn
+        <img src={dish2} className="w-[30vw] flex md:hidden h-[30vw] md:h-[45vw] z-10"/>
         </div>
         <div className="flex flex-row gap-[1vw]">
           <Button className="bg-black " name="Menu" />
@@ -154,18 +157,18 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row gap-[2vw] mt-[2vw]">
-        <CiFacebook className="text-[2.25vw]"/>
-        <FaInstagram className="text-[2.25vw]"/>
-        <TfiTwitter className="text-[2.25vw]"/>
+        <CiFacebook className=" text-[6vw] md:text-[2.25vw]"/>
+        <FaInstagram className=" text-[6vw] md:text-[2.25vw]"/>
+        <TfiTwitter className=" text-[6vw] md:text-[2.25vw]"/>
         </div>
       </div>
 
-      <div className="w-[50%] flex justify-center relative">
-        <img src={dish} className="h-[25vw] absolute z-20 mr-[35vw] mt-[19vw]"/>
+      <div className="md:w-[50%] hidden  md:flex justify-center relative">
+        <img src={dish} className="h-[25vw] absolute z-20 mr-[35vw] mt-[19vw] "/>
         <img src={grass} className="h-[12vw] absolute mr-[30vw] mt-[-5vw]"/>
         <img src={cabbage} className="h-[20vw] absolute mr-[-25vw] mt-[-8vw]"/>
         <img src={grass2} className="h-[15vw] absolute mr-[-23vw] mt-[32vw] rotate-[150deg]"/>
-        <img src={mask} className="h-[45vw] z-10"/>
+        <img src={mask} className="w-[40vw] h-[30vw] md:h-[45vw] z-10"/>
       </div>
     </div>
     

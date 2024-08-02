@@ -15,10 +15,10 @@ import circleFood from "../src/assets/Group1.png"
 const App = () => (
   <div>
     <div>
-      <img src={curve} className="h-[30vw] absolute" />
-      <img src={curve1} className="h-[25vw] absolute" />
-      <img src={curve2} className="h-[30vw] absolute" />
-      <img src={circleFood} className="h-[6vw] mt-[15vw] ml-[8vw] absolute" />
+      <img src={curve} className="h-[50vw] md:h-[30vw] absolute" />
+      <img src={curve1} className=" h-[45vw] md:h-[25vw] absolute" />
+      <img src={curve2} className=" h-[55vw] md:h-[30vw] absolute" />
+      <img src={circleFood} className="h-[6vw] mt-[15vw] ml-[8vw] absolute hidden md:flex" />
     </div>
 
     <div className="overflow-hidden ">
