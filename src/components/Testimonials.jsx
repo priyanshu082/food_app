@@ -3,7 +3,7 @@ import person from "../assets/person-1.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img5 from "../assets/Group (10).png"
+import img5 from "../assets/Group (10).png";
 
 const testimonials = [
   {
@@ -30,7 +30,6 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-
   var settings = {
     dots: true,
     infinite: true,
@@ -42,12 +41,12 @@ const Testimonials = () => {
 
   return (
     <div className="flex flex-col justify-center items-center mt-[5vw] bg-gray-100 py-[4vw] relative">
-             <img src={img5} className="h-[55vw] mt-[20vw] ml-[-70vw] absolute " />
+      <img src={img5} className="h-[55vw] mt-[20vw] ml-[-70vw] absolute " />
       <div className="flex flex-col justify-center items-center mx-[7vw] gap-[2vw]">
-        <div className="text-red-800 text-[4vw] font-semibold">
+        <div className="text-red-800 text-[8vw] md:text-[4vw] font-semibold">
           Our Happy Customers
         </div>
-        <div className="w-[35vw] text-center">
+        <div className=" md:w-[35vw] text-[3vw] md:text-[1vw] text-center">
           Lorem ipsum dolor, sit amet consectetNihil, vitae fugit nobis
           voluptatum eaque eum facilis ipsa odio praesentium, velit
           consectetur..
@@ -55,25 +54,25 @@ const Testimonials = () => {
       </div>
 
       <div
-        className={` w-[40vw] h-[30vw] my-[1vw] justify-center items-center`}
+        className={` w-[70vw] h-[60vw] md:w-[40vw] md:h-[30vw] my-[1vw] justify-center items-center mt-[10vw] md:mt-[4vw]`}
       >
         <Slider {...settings}>
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col h-[25vw] items-center justify-center mt-[5vw] rounded-tl-[8vw] rounded-tr-[2vw] rounded-bl-[2vw] bg-white rounded-br-[8vw] py-[2vw] shadow-inner"
+              className="flex flex-col h-[52vw] md:h-[25vw] items-center justify-center mt-[5vw] rounded-tl-[8vw] rounded-tr-[2vw] rounded-bl-[2vw] bg-white rounded-br-[8vw] py-[2vw] shadow-inner"
             >
               <img
                 src={item.imagePath}
-                className="h-[7vw] w-[7vw] mt-[-5vw] rounded-full mx-auto"
+                className="md:h-[7vw] md:w-[7vw] h-[20vw] w-[20vw] mt-[-6vw] md:mt-[-5vw] rounded-full mx-auto"
               />
-              <div className="text-[1vw] w-[30vw] text-center mx-auto mt-[4vw] font-light">
+              <div className="text-[2.1vw] md:text-[1vw] w-[60vw] md:w-[30vw] text-center mx-auto mt-[4vw] font-light">
                 {item.description}
               </div>
-              <div className="font-medium text-red-800 text-[1.75vw] text-center flex flex-col mt-[2vw]">
+              <div className="font-medium text-red-800 text-[5vw] md:text-[1.75vw] text-center flex flex-col mt-[2vw]">
                 {item.name}
                 <br />
-                <span className="text-[1vw] font-light text-black">
+                <span className="text-[2.5vw] md:text-[1vw] font-light text-black">
                   {item.designation}
                 </span>
               </div>
