@@ -101,8 +101,8 @@ const SpecialDishes = () => (
         </div>
         <img src={mask} className=" md:w-[60%] z-10 md:hidden flex"/>
         <div className="flex flex-col md:flex-row gap-[5vw] md:gap-[1vw] md:justify-start md:items-start justify-center items-center">
-          <Button className="bg-black " name="Menu" />
-          <Button className="bg-red-700 " name="Book a table" />
+          <Button className="bg-black text-[6vw] md:text-[1.25vw]" name="Menu" />
+          <Button className="bg-red-700 text-[6vw] md:text-[1.25vw]" name="Book a table" />
         </div>
       </div>
 

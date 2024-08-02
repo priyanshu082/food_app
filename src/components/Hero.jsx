@@ -59,7 +59,7 @@ const Hero = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="fixed top-0 right-0 bottom-0 w-full sm:w-96 bg-[#E6E6FF] z-50 shadow-lg overflow-y-auto"
+            className="fixed top-0 right-0 bottom-0 w-full sm:w-96 bg-[#f5f5f5] z-50 shadow-lg overflow-y-auto"
           >
             <div className="p-5 flex flex-col items-center mt-[5vw] h-full">
               <button onClick={() => setIsMobileMenuOpen(false)} className="absolute top-6 right-6 text-xl md:text-3xl">
