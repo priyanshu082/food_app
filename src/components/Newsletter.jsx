@@ -3,7 +3,7 @@ import bgImg from "../assets/bgImg.png";
 import Button from "./Button";
 
 const Newsletter = () => (
-  <div className="h-[100vh] justify-center items-center flex">
+  <div className="my-[8vw] justify-center items-center flex">
     <div
       className="h-[30vw] w-[80vw] gap-[4vw] relative flex justify-center items-center rounded-[3vw] flex-col "
       style={{

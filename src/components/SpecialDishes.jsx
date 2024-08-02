@@ -5,6 +5,18 @@ import dish2 from "../assets/dish-3 1.png";
 import dish3 from "../assets/dish-5.png";
 import dish4 from "../assets/dish-4.png";
 import Button from "./Button";
+import img2 from "../assets/Group2.png"
+import img3 from "../assets/Group3.png"
+import img4 from "../assets/Group4.png"
+import img5 from "../assets/Group5.png"
+import img6 from "../assets/Vector.png"
+import img8 from "../assets/Group (2).png"
+import img9 from "../assets/Group (3).png"
+import img10 from "../assets/Group (4).png"
+import img11 from "../assets/Group (5).png"
+import img12 from "../assets/Group (9).png"
+
+
 
 
 const dishes = [
@@ -35,10 +47,20 @@ const dishes = [
 ];
 
 const SpecialDishes = () => (
-  <div className="flex flex-col justify-center items-center mt-[5vw] bg-gray-100 py-[4vw]">
+  <div className="flex flex-col justify-center items-center mt-[5vw] bg-gray-100 py-[4vw] relative">
 
-    <div className="flex flex-col justify-center items-center mx-[7vw] gap-[2vw]">
-      <div className="text-red-800 text-[4vw] font-semibold">
+    <div className="flex flex-col justify-center items-center mx-[7vw] gap-[2vw] py-[5vw] relative">
+        <img src={img2} className="h-[15vw] mt-[-2vw] ml-[45vw] absolute" />
+        <img src={img3} className="h-[10vw] mt-[95vw] ml-[0vw] absolute" />
+        <img src={img4} className="h-[10vw] mt-[95vw] ml-[0vw] absolute" />
+        <img src={img5} className="h-[15vw] mt-[-4vw] mr-[48vw] absolute " />
+
+        {/* <img src={img8} className="h-[15vw] mt-[100vw] ml-[45vw] absolute" /> */}
+        <img src={img9} className="h-[10vw] mt-[80vw] ml-[75vw] absolute" />
+        <img src={img10} className="h-[6vw] mt-[85vw] ml-[55vw] absolute" />
+        <img src={img10} className="h-[12vw] mt-[95vw] ml-[-100vw] absolute" />
+        <img src={img11} className="h-[7vw] mt-[80vw] ml-[-45vw] absolute" />
+      <div className="text-red-800 text-[4vw] font-semibold z-[10]">
         Our Special Dishes
       </div>
       <div className="w-[35vw] text-center">
@@ -47,7 +69,10 @@ const SpecialDishes = () => (
       </div>
     </div>
 
-    <div className="flex flex-row flex-wrap justify-center items-center gap-[2vw] mt-[12vw]">
+    <div className="flex flex-row flex-wrap justify-center items-center gap-[2vw] mt-[12vw] relative">
+
+   
+
       {dishes.map((item, index) => (
         <div className="flex flex-col items-center justify-center relative border-white bg-transparent hover:bg-white border-[2px] rounded-tl-[4vw] rounded-tr-md rounded-bl-md rounded-br-[4vw] px-[1.5vw] py-[2vw] gap-[2vw]  shadow-inner">
           <div className="relative">
@@ -65,9 +90,14 @@ const SpecialDishes = () => (
       ))}
     </div>
 
-    <div className="flex flex-col md:flex-row-reverse  my-[13vw] justify-between relative mx-[7vw]">
-      <div className="w-[40%] flex flex-col gap-[3vw]  py-[10vw] px-[3vw]">
-        <div className="text-[4vw] leading-[5vw] text-red-800 font-semibold w-[35vw]">Welcome to  best Restraunts</div>
+    <div className="flex flex-col md:flex-row-reverse  my-[13vw] justify-between relative mx-[7vw] ">
+    <img src={img5} className="h-[15vw] mt-[3vw] mr-[22vw] absolute " />
+    <img src={img12} className="h-[20vw] mt-[30vw] mr-[-9vw] absolute " />
+      <div className="w-[40%] flex flex-col gap-[3vw]  py-[10vw] px-[3vw] ">
+
+
+
+        <div className="text-[4vw] leading-[5vw] text-red-800 font-semibold w-[35vw] z-[10]">Welcome to  best Restraunts</div>
         <div className="mt-[1vw] w-[75%]">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
           aliquid ex pariatur, veritatis doloremque repudiandae sed ipsa

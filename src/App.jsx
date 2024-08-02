@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import curve from "../src/assets/ellipse.png";
 import curve1 from "../src/assets/Ellipse1.png";
 import curve2 from "../src/assets/Ellipse2.png";
+import circleFood from "../src/assets/Group1.png"
 
 const App = () => (
   <div>
@@ -17,6 +18,7 @@ const App = () => (
       <img src={curve} className="h-[30vw] absolute" />
       <img src={curve1} className="h-[25vw] absolute" />
       <img src={curve2} className="h-[30vw] absolute" />
+      <img src={circleFood} className="h-[6vw] mt-[15vw] ml-[8vw] absolute" />
     </div>
 
     <div className="overflow-hidden ">
@@ -28,8 +30,7 @@ const App = () => (
       <Chef />
       <Testimonials />
       <Newsletter />
-      {/* 
-      <Footer /> */}
+      <Footer />
     </div>
   </div>
 );

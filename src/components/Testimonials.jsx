@@ -3,6 +3,8 @@ import person from "../assets/person-1.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import img5 from "../assets/Group (10).png"
+
 const testimonials = [
   {
     imagePath: person,
@@ -28,6 +30,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+
   var settings = {
     dots: true,
     infinite: true,
@@ -36,8 +39,10 @@ const Testimonials = () => {
     speed: 700,
     cssEase: "linear",
   };
+
   return (
-    <div className="flex flex-col justify-center items-center mt-[5vw] bg-gray-100 py-[4vw] ">
+    <div className="flex flex-col justify-center items-center mt-[5vw] bg-gray-100 py-[4vw] relative">
+             <img src={img5} className="h-[55vw] mt-[20vw] ml-[-70vw] absolute " />
       <div className="flex flex-col justify-center items-center mx-[7vw] gap-[2vw]">
         <div className="text-red-800 text-[4vw] font-semibold">
           Our Happy Customers
