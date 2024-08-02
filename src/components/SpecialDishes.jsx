@@ -60,56 +60,53 @@ const SpecialDishes = () => (
         <img src={img10} className="h-[6vw] mt-[85vw] ml-[55vw] absolute" />
         <img src={img10} className="h-[12vw] mt-[95vw] ml-[-100vw] absolute" />
         <img src={img11} className="h-[7vw] mt-[80vw] ml-[-45vw] absolute" />
-      <div className="text-red-800 text-[4vw] font-semibold z-[10]">
+      <div className="text-red-800 text-[5vw] md:text-[4vw] font-semibold z-[10]">
         Our Special Dishes
       </div>
-      <div className="w-[35vw] text-center">
+      <div className="w-[50vw] md:w-[35vw] text-center text-[2vw] md:text-[1vw]">
         Lorem ipsum dolor, sit amet consectetNihil, vitae fugit nobis voluptatum
         eaque eum facilis ipsa odio praesentium, velit consectetur..
       </div>
     </div>
 
-    <div className="flex flex-row flex-wrap justify-center items-center gap-[2vw] mt-[12vw] relative">
-
-   
-
+    <div className="flex flex-row flex-wrap justify-center items-center gap-[20vw] md:gap-[2vw] mt-[12vw] relative">
       {dishes.map((item, index) => (
-        <div className="flex flex-col items-center justify-center relative border-white bg-transparent hover:bg-white border-[2px] rounded-tl-[4vw] rounded-tr-md rounded-bl-md rounded-br-[4vw] px-[1.5vw] py-[2vw] gap-[2vw]  shadow-inner">
+        <div className="flex flex-col items-center justify-center relative border-white bg-transparent hover:bg-white border-[2px] rounded-tl-[4vw] rounded-tr-md rounded-bl-md rounded-br-[4vw] px-[1.5vw] py-[2vw] gap-[2vw] shadow-inner">
           <div className="relative">
-          <img src={item.image} className="h-[14vw] w-[14vw] mt-[-10vw] " />
-          <div className="bg-black rounded-full text-white p-[1vw] absolute mt-[-14vw] ml-[10vw] shadow-2xl">
+          <img src={item.image} className=" w-[60vw] md:h-[14vw] md:w-[14vw] mt-[-20vw] md:mt-[-10vw] " />
+          <div className="bg-black rounded-full text-white p-[1vw] text-[2vw] md:text-[1vw] absolute mt-[-14vw] ml-[10vw] shadow-2xl">
             {item.price}
           </div>
             </div>
          
-          <div className="text-[1.5vw] font-medium ">{item.name}</div>
-          <div className="w-[15vw] text-[1vw] text-center">
+          <div className="text-[6vw] md:text-[1.5vw] font-medium ">{item.name}</div>
+          <div className=" w-[35vw] md:w-[15vw] text-[2vw] md:text-[1vw] text-center">
             {item.description}
           </div>
         </div>
       ))}
     </div>
 
+
     <div className="flex flex-col md:flex-row-reverse  my-[13vw] justify-between relative mx-[7vw] ">
     <img src={img5} className="h-[15vw] mt-[3vw] mr-[22vw] absolute " />
     <img src={img12} className="h-[20vw] mt-[30vw] mr-[-9vw] absolute " />
-      <div className="w-[40%] flex flex-col gap-[3vw]  py-[10vw] px-[3vw] ">
 
-
-
-        <div className="text-[4vw] leading-[5vw] text-red-800 font-semibold w-[35vw] z-[10]">Welcome to  best Restraunts</div>
-        <div className="mt-[1vw] w-[75%]">
+      <div className=" md:w-[40%] w-[100%] flex flex-col gap-[5vw] md:gap-[3vw] py-[10vw] px-[3vw] ">
+        <div className="text-[8vw] text-center  md:text-[4vw] md:leading-[5vw] text-red-800 font-semibold md:w-[35vw] z-[10]">Welcome to  best Restraunts</div>
+        <div className="mt-[1vw] text-[3vw] md:text-[1vw] md:w-[75%]">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
           aliquid ex pariatur, veritatis doloremque repudiandae sed ipsa
           molestias ea omnis magn
         </div>
-        <div className="flex flex-row gap-[1vw]">
+        <img src={mask} className=" md:w-[60%] z-10 md:hidden flex"/>
+        <div className="flex flex-col md:flex-row gap-[5vw] md:gap-[1vw] md:justify-start md:items-start justify-center items-center">
           <Button className="bg-black " name="Menu" />
           <Button className="bg-red-700 " name="Book a table" />
         </div>
       </div>
 
-        <img src={mask} className="h-[45vw] w-[60%] z-10"/>
+        <img src={mask} className="h-[45vw] md:w-[60%] z-10 hidden md:flex"/>
    
     </div>
 
