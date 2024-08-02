@@ -16,19 +16,19 @@ const categories = [
 ];
 
 const Categories = () => (
-  <div className="flex flex-col gap-[4vw] mx-[7vw]">
+  <div className="flex flex-col gap-[4vw] mx-[3vw] md:mx-[7vw]">
     <div className="flex flex-row justify-between items-center">
-      <div className="text-[3vw] font-semibold">Categories</div>
-      <button className="bg-cyan-100 px-[1.75vw] h-fit w-fit py-[0.75vw] rounded-2xl text-gray-800 font-medium">
+      <div className="text-[6vw] md:text-[3vw] font-semibold">Categories</div>
+      <button className="bg-cyan-100 px-[3vw] md:px-[1.75vw] h-fit w-fit py-[1.5vw] md:py-[0.75vw] rounded-2xl text-gray-800 font-medium">
         View All Categories
       </button>
     </div>
 
-    <div className="flex flex-row flex-wrap  gap-[2vw] justify-center items-center">
+    <div className="flex flex-row flex-wrap gap-[10vw] md:gap-[2vw] justify-center items-center">
       {categories.map((item,index)=>(
-         <div key={index} className={`flex flex-col border-white border p-[3vw] w-fit gap-[2vw] items-center rounded-[2vw] justify-center gradient-${item.color}`}
+         <div key={index} className={`flex flex-col border-white border p-[6vw] md:p-[3vw] w-fit gap-[2vw] items-center rounded-[4vw] md:rounded-[2vw] justify-center gradient-${item.color}`}
          >
-         <img src={item.icon} className="w-[6vw] h-[6vw]"/>
+         <img src={item.icon} className="md:w-[6vw] md:h-[6vw] h-[25vw]"/>
          <div className="font-medium">
            {item.name}
          </div>
