@@ -8,20 +8,21 @@ const Chef = () => (
        <img src={img5} className="h-[20vw] mt-[0vw] ml-[4vw] absolute " />
     <div className="flex flex-col md:flex-row  my-[2vw] justify-around relative mx-[7vw]">
 
-      <div className="w-[50%] flex flex-col gap-[3vw]  py-[5vw] px-[3vw] ">
-        <div className="text-[4vw] leading-[5vw]  font-semibold w-[35vw]">Our experts Chefs</div>
-        <div className="mt-[1vw] w-[75%]">
+      <div className=" md:w-[50%] flex flex-col gap-[5vw] md:gap-[3vw] py-[5vw] px-[3vw] ">
+        <div className="text-[8vw] md:text-[4vw] leading-[5vw] text-center md:text-start font-semibold md:w-[35vw]">Our experts Chefs</div>
+        <div className="mt-[1vw] text-[3vw] md:text-[1vw] md:w-[75%]">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
           aliquid ex pariatur, veritatis doloremque repudiandae sed ipsa
           molestias ea omnis magn
         </div>
-        <div className="flex flex-row gap-[1vw] mt-[15vw] items-center ml-[4vw]">
+        <img src={chef} className=" md:h-[40vw] md:hidden flex z-10"/>
+        <div className="flex flex-col md:flex-row gap-[5vw] md:gap-[1vw] md:justify-start md:items-start justify-center items-center">
           <Button className="bg-black " name="Menu" />
           <Button className="bg-red-700 " name="Book a table" />
         </div>
       </div>
 <div className='items-center flex justify-center '>
-        <img src={chef} className="h-[40vw]  z-10"/>
+        <img src={chef} className="h-[40vw] hidden md:flex z-10"/>
 </div>
    
     </div>
